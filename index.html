@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*Header*/
+.header {
+  padding: 10px;
+  text-align: left;
+  background: #1a1abc;
+  color: white;
+
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: grey;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+/* Left side column*/
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Right side bigger column */
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><b></b>Liam Nicholson</h1>
+  <p></b>Technology Consultant Apprentice</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html#" class="active">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="cheatsheet.html">Cheatsheets</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <div><img src="https://animalia-life.com/data_images/welsh-springer-spaniel/welsh-springer-spaniel1.jpg" width="300" height="300" style="border-radius: 50%;"></div>
+  </div>
+  <div class="main">
+    <h2>BIO</h2>
+    <div class="fakeimg" style="height:100px;">Hello my name is Liam Nicholson, I started at BJSS as a Technology Consultant Apprentice on the 27th of March 2023. I am located in the Nottingham office, and I am currently in Leeds on my first week of learning HTML.</div>
+    <h2>SKILLS</h2>
+    <div class="fakeimg" style="height:100px;">-Being cool
+    <br>
+    -Being a G
+    <br>
+    -Being me</div>
+    <br>
+    <a href="https://www.bjss.com/" >BJSS Website Link</a>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>

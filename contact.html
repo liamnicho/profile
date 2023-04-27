@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: grey;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+
+}
+
+/* input styles */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Liam Nicholson</h2>
+<p>Technology Consultant Apprentice - BJSS</p>
+<hr>
+<div class="navbar">
+    <a href="index.html#" class="active">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="cheatsheet.html">Cheatsheet</a>
+  </div>
+<div class="container">
+  <div style="text-align:left">
+    <h2>Contact me</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="name">Liam Nicholson</label>
+        <br>
+        <label for="email"><a href="https://mail.google.com/mail/u/0/?hl=en-GB#inbox?compose=CllgCKCGmFMlMKlVxCsMPKWMQQWxttzRWrlMpmbwqNzZFtRHpfLWNKHGbrMSrrBCnRSPfjLSLrL"><h4>Email:liamrnicho@gmail.com</h2></Email></a></label>
+        <label for="phone number"><a href="tel:07505701693">07505701693</a></label>
+        <br>
+        <br>
+        <label for="linkedin"><a href="https://www.linkedin.com/in/liam-nicholson-75844521a/"><img src="https://www.onrec.com/sites/onrec/directory/files/Linkedin-Logo.png" width="200" height="200" ></a></label>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
