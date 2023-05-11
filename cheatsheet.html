@@ -312,14 +312,35 @@
                            <br>
                            return total
                            <br>
-                       }
+                            }
                     </td>
+                    <tr>
+                        <td>While loops. A while loop can be emulated using a for loop with a condition statement. The loop will execute as long as the condition
+                            is true. Once the condition is becomes false the loop will terminate.
+                        </td>
+                        <td>
+                            i := 0
+                            <br>
+                            for i < 5 {
+                                <br>
+                                fmt.Println(i)
+                                <br>
+                                i++
+                                <br>
+                            }
+                        </td>
+                    </tr>
                 </tr>
                 <tr>
                     <td>Go mod init</td>
-                    <td>The go mod init command creates a go.mod file
+                    <td>The go mod init command creates a go.mod file to track your code's dependencies.
+                        <br> 
+                        It allows you to modules of Go code that can be used in .go files. Inside the go.mod file will be the go version your code supports.
                         <br>
-                         to track your code's dependencies.</td>
+                        As you add more dependencies it will list the versions your code depends upon. 
+
+
+                    </td>
                 </tr>
                 <tr>
                     <td>How to run go code</td>
@@ -384,7 +405,8 @@
                 </tr>
                 <tr>
                     <td>Declare and assign variables</td>
-                    <td>Use var followed by name and data type
+                    <td>Use var followed by name and data type. To assign something after a variable use the "=" operator.
+                        <br>
                         <br>
                         var fruit string
                         <br>
@@ -395,7 +417,9 @@
                     <td>:=</td>
                 </tr>
                 <tr>
-                    <td>If / Else statements</td>
+                    <td>If / Else statements, An if statement is conditional logic. It will execute if a condition is true.
+                        An else statemnt will execute if the condition is false.
+                    </td>
                     <td>if 7%2 == 0 {
                         <br>
                         fmt.Println("7 is even")
