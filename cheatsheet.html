@@ -5,6 +5,7 @@
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
     <style>
         * {
             box-sizing: border-box;
@@ -292,54 +293,26 @@
     </div>
     <div class="tab">
         <input type="radio" id="tab-6" name="tab-group-1">
-        <label for="tab-6">Go Code</label>
+        <label for="tab-6">Go Code 2</label>
 
         <div class="content">
             <table>
                 <tr>
-                    <td><b>GO Code</b></td>
+                    <td><b>GO Code 2</b></td>
                 </tr>
                 <tr>
-                    <td>Short assignment operator</td>
-                    <td>:=</td>
-                </tr>
-                <tr>
-                    <td>If / Else statements</td>
-                    <td>if 7%2 == 0 {
+                    <td>Functions begin with func followed by the function name. add () func would add two integers and return the value</td>
+                    <td>
+                       func add(x int, y int) int {
                         <br>
-                        fmt.Println("7 is even")
                         <br>
-                    } else {
-                        <br>
-                        fmt.Println("7 is odd")
-                    }</td>
-                </tr>
-                <tr>
-                    <td>Declare and assign variables</td>
-                    <td>Use var followed by name and data type
-                        <br>
-                        var fruit string
-                        <br>
-                        fruit = "apple"</td>
-                </tr>
-                <tr>
-                    <td>For loops in Go</td>
-                    <td>sum := 0
-                        <br>
-                        for i := 1; i < 5; i++ {
-                            <br>
-                            sum += i
-                        }
-                        <br>
-                        fmt.Println(sum)</td>
-                </tr>
-                <tr>
-                    <td>Functions</td>
-                    <td>Functions begin with func followed by the function name
-                        <br>
-                        func SimpleFunction() {
-                            <br>
-                            fmt.Println("Hello World")
+                           total := 0
+                           <br>
+                           total = x + y
+                           <br>
+                           return total
+                           <br>
+                       }
                     </td>
                 </tr>
                 <tr>
@@ -372,7 +345,8 @@
                 </tr>
                 <tr>
                     <td>Example GO test</td>
-                    <td>t.Run("empty string defaults to 'world'", func(t *testing.T) {
+                    <td>
+                        t.Run("empty string defaults to 'world'", func(t *testing.T) {
                         <br>
                         got := Liam("", "English")
                         <br>
@@ -382,9 +356,67 @@
                         <br>
                         })</td>
                 </tr>
+                <tr>
+                    <td>Explination of GO test</td>
+
+                    <td>-The t.Run is a function that shows this is a test
+                        <br>
+                        -This then calls the function "Liam"
+                        <br>
+                        -This assigns the result to the variable "got"
+                        <br>
+                        -Want is also a variable and has a value of "Hello, World"
+                        <br>
+                        -It then calls a function "assertCorrectMessage" with the "got" and "want" variables
+                    </td>
+                </tr>
         </div>
         </table>
     </div>
+    <div class="tab">
+        <input type="radio" id="tab-8" name="tab-group-1">
+        <label for="tab-8">GO code 1</label>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <td><b>GO Code 1</b></td>
+                </tr>
+                <tr>
+                    <td>Declare and assign variables</td>
+                    <td>Use var followed by name and data type
+                        <br>
+                        var fruit string
+                        <br>
+                        fruit = "apple"</td>
+                </tr>
+                <tr>
+                    <td>Shorthand for declaring and initalizing a variable</td>
+                    <td>:=</td>
+                </tr>
+                <tr>
+                    <td>If / Else statements</td>
+                    <td>if 7%2 == 0 {
+                        <br>
+                        fmt.Println("7 is even")
+                        <br>
+                    } else {
+                        <br>
+                        fmt.Println("7 is odd")
+                    }</td>
+                </tr>
+                <tr>
+                    <td>For loops in Go, the variable sum is 0, it then uses a for loops to iterate from 1-5, adding each value of i to the sum, then finally it prints the sum.</td>
+                    <td>sum := 0
+                        <br>
+                        for i := 1; i < 6; i++ {
+                            <br>
+                            sum += i
+                        }
+                        <br>
+                        fmt.Println(sum)</td>
+                </tr>
+            </table>
     </div>
     </div>
     </div>
