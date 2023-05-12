@@ -342,7 +342,16 @@
                     <td><b>GO Code 2</b></td>
                 </tr>
                 <tr>
-                    <td>Functions begin with func followed by the function name. add () func would add two integers and return the value</td>
+                    <td>Functions begin with func followed by the function name.
+                        <br>
+                        -A function "add" is defined and takes two integer parameters "x" and "y" and returns their sum as an integer
+                        <br>
+                        -A variable named "total" is declared and initialised to 0
+                        <br>
+                        -The value of "x+y" is assigned to the "total" using the "+" operator
+                        <br>
+                        -The function then returns the value of "total" using the "return" statement
+                    </td>
                     <td>
                        func add(x int, y int) int {
                         <br>
@@ -359,6 +368,14 @@
                         <td>While loops. A while loop can be emulated using a for loop with a condition statement. The loop will execute as long as the condition
                             is true.
                             Once the condition becomes false the loop will terminate.
+                            <br>
+                            -The variable "i" is declared 0 using shorthand
+                            <br>
+                            -A loop is created using the "for" with a keyword with the condition i < 5
+                            <br>
+                            -The value of "i" is printed using "fmt.Println"
+                            <br>
+                            -The value of "i" is incremented by 1 using "i++", the loop will terminate once the condition becomes false
                         </td>
                         <td>
                             i := 0
@@ -372,15 +389,6 @@
                             }
                         </td>
                     </tr>
-                </tr>
-                <tr>
-                    <td>Go mod init</td>
-                    <td>The go mod init command creates a go.mod file to track code dependencies. 
-                        <br>
-                        It allows you to create modules of Go code that can be used in .go files.
-                        <br>
-                        Inside of the g
-                    </td>
                 </tr>
                 <tr>
                     <td>How to run go code</td>
@@ -479,6 +487,15 @@
                         }
                         <br>
                         fmt.Println(sum)</td>
+                </tr>
+                <tr>
+                    <td>Go mod init</td>
+                    <td>The go mod init command creates a go.mod file to track code dependencies. 
+                        <br>
+                        It allows you to create modules of Go code that can be used in .go files.
+                        <br>
+                        Inside of the g
+                    </td>
                 </tr>
             </table>
     </div>
